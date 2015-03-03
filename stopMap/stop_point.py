@@ -35,7 +35,7 @@ if __name__ == "__main__":
     stop_point = []
     # 止まっている状態のGPS情報を取得
     for row in range(sheet_1.nrows):
-        if sheet_1.cell(row,log_speed).value < 10 and sheet_1.cell(row,log_record_type).value == "GpsRecord":
+        if sheet_1.cell(row,log_speed).value < 5 and sheet_1.cell(row,log_record_type).value == "GpsRecord":
             point_get = {"lat":sheet_1.cell(row,log_latitude).value,"lng":sheet_1.cell(row,log_longitude).value}
             json_point = {
                     "no":row,

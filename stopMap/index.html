@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>GEOTABつっかえポイント</title>
+    <title>つっかえポイント</title>
     <style>
         @charset "utf-8";
         #map {
@@ -31,10 +31,11 @@
             for(var i = 0; i < len; i++) {
               // console.log(data[i].point.lat);
               // console.log(data[i].point.lng);
+              // console.log(data[i].speed);
               map.addMarker({
                 lat: data[i].point.lat,
                 lng: data[i].point.lng,
-                title: "つっかえ",
+                title: String(data[i].speed)+"km/h",
                 icon: "kame.gif",
             });
             };
