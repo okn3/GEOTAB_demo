@@ -2,7 +2,7 @@
 #-------------------------
 #
 # excelからデータ呼び出し
-# 燃費データの算出
+# アイドリングのポイントの把握
 #
 #-------------------------
 
@@ -35,8 +35,7 @@ if __name__ == "__main__":
     for row in range(sheet_1.nrows):
         if sheet_1.cell(row,log_engin_diagnostic).value == "Engine RPM":
 #            print "time: ", sheet_1.cell(row,log_time).value
-#        print "回転数:", sheet_1.cell(row,log_engin_status).value
-            
+            print "回転数:", sheet_1.cell(row,log_engin_status).value
             if float(sheet_1.cell(row,log_engin_status).value[:-3]) < 1300:
                 state = " "
             else:

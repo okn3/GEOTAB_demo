@@ -3,6 +3,8 @@
 #
 # excelからデータ呼び出し
 #
+# -record typeがGpsRecordのログデータを全部抜き出す-
+#
 #-------------------------
 
 import xlrd
