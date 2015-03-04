@@ -36,6 +36,10 @@ statusがGpsRecordの行のデータを全て表示
 
 使用燃料とアイドリング燃料から効率を計算
 
+## battery_log.py
+
+電気自動車のバッテリー残量を可視化
+
 ## logs/
 
 myGEOTABからexcelデータをdownloadし車種別にデータを分割した
