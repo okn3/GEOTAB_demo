@@ -32,23 +32,24 @@ log_ignition = 10
 log_engin_diagnostic = 11
 log_engin_status = 13
 
+
 #行の表示
 def showRow():
     
     # 列の全データ表示
     for col in range(sheet_1.ncols):
-        print sheet_1.cell(row,col).value
+        print sheet_1.cell(row,col).value,
     
-    # time & location
+    # データを選択して表示
     #print sheet_1.cell(row,log_time)
     #print sheet_1.cell(row,log_location)
 
 
 if __name__ == "__main__":
-
-# データタイプから絞り込み
+            
+    # データタイプから絞り込み
     for row in range(sheet_1.nrows):
         if sheet_1.cell(row,log_record_type).value == "GpsRecord":
             print "[",row,"]:", sheet_1.cell(row,log_record_type).value
             showRow()
-
+            print "\n"
