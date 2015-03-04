@@ -10,9 +10,9 @@ jsonをgooglemapで表示
 
 #### 使用方法
 
-'python stop_point.py'
+`python stop_point.py`
 
-'open index.html -a Firefox'
+`open index.html -a Firefox`
 
 * firefox 限定
 
@@ -39,3 +39,7 @@ statusがGpsRecordの行のデータを全て表示
 ## logs/
 
 myGEOTABからexcelデータをdownloadし車種別にデータを分割した
+
+******
+
+開発はpython2.7.6でやっております
