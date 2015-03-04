@@ -4,25 +4,38 @@
 ## stopMap
 
 excelデータからjsonでデータ書き出し
-jsonデータをgooglemapで表示
+jsonをgooglemapで表示
 
 車のスピードが遅くなるポイントの特定
 
-* firefox 限定
+#### 使用方法
 
+'python stop_point.py'
+
+'open index.html -a Firefox'
+
+* firefox 限定
 
 ## api_test.py
 
 GEOTABのAPIをpythonからたたく
 
+* apiの挙動がおかしい
+
 ## excel_test.py
 
-excelデータを抜きとる
+excelデータを抜き取って表示
+
+statusがGpsRecordの行のデータを全て表示
 
 ## ilde_status.py
 
-アイドリングの状態を分析
+（未完成）アイドリングの状態を分析→（本来は信号の位置の特定使う予定でした）
 
 ## fuel_efficiency.py
 
 使用燃料とアイドリング燃料から効率を計算
+
+## logs/
+
+myGEOTABからexcelデータをdownloadし車種別にデータを分割した
