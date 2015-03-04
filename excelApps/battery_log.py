@@ -9,7 +9,7 @@ import xlrd
 import time
 
 # 読み込みファイルの指定
-book = xlrd.open_workbook('logs/0304aquia.xlsm')
+book = xlrd.open_workbook('../logs/0304aquia.xlsm')
 
 # シートの指定(summary)
 sheet_1 = book.sheet_by_index(1)

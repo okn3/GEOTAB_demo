@@ -9,7 +9,7 @@
 import xlrd
 
 # 読み込みファイルの指定
-book = xlrd.open_workbook('logs/0223BMW116i.xlsx')
+book = xlrd.open_workbook('../logs/0227note.xlsx')
 
 # シートの指定(summary)
 sheet_1 = book.sheet_by_index(0)

@@ -10,7 +10,7 @@
 import xlrd
 
 # 読み込みファイルの指定
-book = xlrd.open_workbook('logs/geotab_log.xlsm')
+book = xlrd.open_workbook('../logs/geotab_log.xlsm')
 
 # シートの指定(summary)
 sheet_1 = book.sheet_by_index(2)
